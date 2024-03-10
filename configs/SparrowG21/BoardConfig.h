@@ -30,8 +30,7 @@
 #define GPIO_PIN_17 GpioAction::BUTTON_PRESS_R3		 // R3     | RS     | RS      | R3       | 12     | RS     |
 #define GPIO_PIN_08 GpioAction::BUTTON_PRESS_A1		 // A1     | Guide  | Home    | PS       | 13     | ~      |
 #define GPIO_PIN_11 GpioAction::BUTTON_PRESS_A2		 // A2     | ~      | Capture | ~        | 14     | ~      |
-
-#define TURBO_ENABLED 1
+#define GPIO_PIN_12 GpioAction::BUTTON_PRESS_FN
 #define GPIO_PIN_09 GpioAction::BUTTON_PRESS_TURBO
 
 // Keyboard Mapping Configuration
@@ -56,9 +55,11 @@
 #define KEY_BUTTON_A2 HID_KEY_F2					 // A2     | ~      | Capture | ~        | 14     | ~      |
 #define KEY_BUTTON_FN -1									 // Hotkey Function                                        |
 
-#define BOARD_LEDS_PIN 24
-#define LED_BRIGHTNESS_MAXIMUM 50
+#define TURBO_ENABLED 1
+#define TURBO_LED_PIN 10
 
+#define BOARD_LEDS_PIN 24
+#define LED_BRIGHTNESS_MAXIMUM 128
 #define LEDS_DPAD_LEFT 0
 #define LEDS_DPAD_DOWN 1
 #define LEDS_DPAD_RIGHT 2
@@ -72,9 +73,18 @@
 #define LEDS_BUTTON_R2 10
 #define LEDS_BUTTON_L2 11
 
+#define BOARD_LED_ENABLED 1
+#define BOARD_LED_TYPE ON_BOARD_LED_MODE_MODE_INDICATOR
+
 #define HAS_I2C_DISPLAY 1
 #define I2C_SDA_PIN 0
 #define I2C_SCL_PIN 1
 #define I2C_BLOCK i2c0
+
+#define ANALOG_INPUT_ENABLED 1
+#define ANALOG_ADC_1_VRX 26
+#define ANALOG_ADC_1_VRY 27
+#define ANALOG_ADC_2_VRX 28
+#define ANALOG_ADC_2_VRY 29
 
 #endif
